@@ -9,6 +9,8 @@ function Home() {
 
     <div className="App">
       <Link to={`/estadis`}>estadisticas</Link>
+      <Link to={`/form`}>Form</Link>
+
       {Personas.map((persona) => {
         return(
           <div key={persona.id}>
