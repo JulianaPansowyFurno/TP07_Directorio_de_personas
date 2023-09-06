@@ -3,7 +3,6 @@ import {
   Routes, Route
 } from "react-router-dom";
 import Home from './componets/Home.js';
-import Layout from "./componets/Layout.js";
 import Persona from "./componets/Persona.js";
 import Estadis from "./componets/Estadis.js";
 import Form from "./componets/Form.js";

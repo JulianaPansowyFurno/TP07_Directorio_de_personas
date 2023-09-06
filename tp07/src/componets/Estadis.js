@@ -30,14 +30,17 @@ function Estadis() {
   })
 
   return (
-    <div className="App">
+    <div className="Padre">
 
-      <p>Mayores de 35: {cont1}</p>
+    <div className="Estadisticas">
+      
+      <p>Mayores de 35 años: {cont1}</p>
       <p>Mayor/es : {PersonaMayor.nombre}</p>
       <p>Menor/es : {PersonaMenor.nombre}</p>
-      <Link to={`/`}>estadisticas</Link>
+      <Link className="BTN" to={`/`}> Home</Link>
 
 
+    </div>
     </div>
   );
 }

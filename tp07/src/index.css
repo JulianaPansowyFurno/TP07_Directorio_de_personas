@@ -1,11 +1,22 @@
 body {
-  margin: 0;
+  /* margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+   background-image: linear-gradient(-225deg, #c025c0 1%, #6f1685 30%, #4d57df 100%); 
+  /* background-image: url(https://static.platzi.com/media/blog/semana4-blog_estilizar-componentes-react-cover-a179cf65-b1c5-4884-a225-92f8a665b7f5.png); */
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 26px;
+  min-height: 100%;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -39,4 +50,102 @@ code {
 /* icon prefix focus color */
 .input-field .prefix.active {
   color: #000;
+}
+
+.Persona{
+  background-color: #e3a9d2; /* Color de fondo pastel */
+  border: none;
+  border-radius: 20px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 16px; /* Tamaño de la fuente */
+   /* Color del texto */
+  cursor: pointer;
+  text-align: center;
+  width: 5%;
+  height: 20%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+}
+
+.Persona:hover {
+  /* Estilos adicionales al pasar el cursor sobre el botón */
+  background-color: #b14197; /* Color de fondo pastel en hover */
+}
+
+.BTN{
+  background-color: #554ec2; /* Color de fondo pastel */
+  border: none;
+  border-radius: 20px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #252525; /* Color del texto */
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22.5%;
+}
+
+.BTN:hover {
+  /* Estilos adicionales al pasar el cursor sobre el botón */
+  background-color: #b14197; /* Color de fondo pastel en hover */
+}
+
+.Estadisticas{
+  height: 100%;
+  /* display: flex;
+    /* align-items: center; */
+    /* justify-content: center;
+    margin-left: 22.5%; */ 
+    background: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.Padre{
+ height: 100vh;
+  width: 100%;
+}
+
+.BTNHome{
+  background-color: #554ec2; /* Color de fondo pastel */
+  border: none;
+  border-radius: 20px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #252525; /* Color del texto */
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22.5%;
+}
+
+.BTNHome:hover {
+  /* Estilos adicionales al pasar el cursor sobre el botón */
+  background-color: #b14197; /* Color de fondo pastel en hover */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="int"],
+input[type="email"],
+input[type="date"]
+{
+  width: 50%;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
 }
