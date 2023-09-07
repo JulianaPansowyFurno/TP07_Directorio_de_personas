@@ -14,9 +14,11 @@ function Home() {
 
       {Personas.map((persona) => {
         return(
+          
           <div key={persona.id} >
-              <Link to={`/persona/${persona.id}`} className='Persona'>{persona.nombre}</Link>
+              <Link to={`/persona/${persona.id}`} className='BTN3'> {persona.nombre}</Link>
             <br></br>
+          
           </div>
         );
     })}

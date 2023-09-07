@@ -1,61 +1,65 @@
-import Personas from "./Personas.json"
-import Persona from "./Persona.js"
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react"
 
 
-function Estadis() {
-  //const [Edad, setEdad] = useState([]);
-
-  // useEffect(() => {
-  //  PersonaMayor;
-  // }, []);
-
-  var cont1 = 0;
-  {
-    Personas.map((persona) => {
-      if (persona.edad > 35) {
-        return cont1++;
-      }
-    })
-  }
-
-
-  const PersonaMayor = Personas.reduce((prev, current) => {
-    return parseInt(current.edad) >= parseInt(prev.edad) ? current : prev;
-  })
-
-  const PersonaMenor = Personas.reduce((prev, current) => {
-    return parseInt(current.edad) <= parseInt(prev.edad) ? current : prev;
-  })
-
+function Form() {
+  
   return (
-  <div className="row">
-  <form className="col s12">
-    <div className="row">
-      <div className="input-field col s6">
-        <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
-        <label for="first_name">Nombre</label>
-      </div>
-      <div className="input-field col s6">
-        <input id="last_name" type="text" className="validate"/>
-        <label for="last_name">Apellido</label>
-      </div>
-    </div>
-    <div className="row">
-      <div className="input-field col s12">
-        <input id="email" type="email" className="validate"/>
-        <label for="email">Email</label>
-      </div>
-      <div className="input-field col s6">
-        <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
-        <label for="first_name">Edad</label>
-      </div>
-    </div>
+            <div id='Form2' >
+              <div className='left'>
+                <form>
+                    <br></br>
+                    <br></br>
+                    
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-filled">
+                      <span className="omrs-input-label">Nombre</span>
+                      <p></p>
+                        <input className="u-full-width" type="text" name="NombreApellido" required></input>
+                        <p></p>
+                      </label>
+			              </div>
 
-  </form>
-</div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-filled">
+                      <span className="omrs-input-label">Apellido</span>
+                      <p></p>
+                        <input className="u-full-width" type="text" name="NombreApellido" required></input>
+                        <p></p>
+                      </label>
+			              </div>
+                  
+                    <br></br>
+                    <div id='colorLetrasLogin' className="mb-3">
+                    <div className="omrs-input-group">
+                    <label className="omrs-input-filled">
+                    <span className="omrs-input-label">Edad</span>
+                    <p></p>
+                      <input className="u-full-width" type="int" name="DNI" required></input>
+                      <p></p>
+                    </label>
+			              </div>
+                    </div>
+
+                    <div className="omrs-input-group">
+                    <label className="omrs-input-filled">
+                    <span className="omrs-input-label">Mail</span>
+                    <p></p>
+                      <input className="u-full-width" type="email" name="Mail" required></input>
+                      <p></p>
+                    </label>
+			              </div>
+                    </form>
+                    </div>
+                    <br></br>
+                    {/* BOTONES PARA LA PROXIMA PAGINA*/}
+                  <Link type="submit" className='BTN2'>Enviar</Link>
+                  <br></br>
+                  <Link className='BTN2' to={`/`}>Home</Link>
+              
+            
+          </div>
   );
 }
 
-export default Estadis; 
+export default Form; 
